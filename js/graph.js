@@ -20,11 +20,14 @@ Highcharts.chart('swiper-slide-graph1', {
   series: [{
     name: '1',
     data: [3, 2.7, 2.5],
+    color: '#617fbd'
   }, {
     name: '2',
-    data: [6, 5.5, 5]
+    data: [6, 5.5, 5],
+    color: '#405e9e'
   }, {
     name: '3',
-    data: [1, 1.8, 2.5]
+    data: [1, 1.8, 2.5],
+    color: '#2b4989'
   }]
 });
