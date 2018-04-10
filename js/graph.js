@@ -42,7 +42,7 @@ Highcharts.chart('swiper-slide-graph2', {
     type: 'bar'
   },
   title: {
-    text: 'Stacked bar chart'
+    text: ''
   },
   xAxis: {
     categories: ['1', '2', '3', '4', '5', '6', '7', '8']
@@ -50,7 +50,7 @@ Highcharts.chart('swiper-slide-graph2', {
   yAxis: {
     min: 0,
     title: {
-      text: 'Total fruit consumption'
+      text: ''
     }
   },
   legend: {
@@ -62,17 +62,33 @@ Highcharts.chart('swiper-slide-graph2', {
     }
   },
   series: [{
+      name: 'boost',
+      data: [1.5, 0, 0, 0, 0, 0, 0, 0],
+      color: '#00FF34',
+  }, {
     name: '1',
     data: [24.2, 0, 0, 0, 0, 0, 0, 0],
-    color: '#2b4989'
+    color: '#2b4989',
+  }, {
+    name: 'lost',
+    data: [0, 0.5, 0, 0, 0, 0, 0, 0],
+    color: '#FF0089'
   }, {
     name: '2',
     data: [0, 13.4, 0, 0, 0, 0, 0, 0],
     color: '#2b4989'
   }, {
+    name: 'boost',
+    data: [0, 0, 0.2, 0, 0, 0, 0, 0],
+    color: '#00FF34',
+  }, {
     name: '3',
     data: [0, 0, 10.4, 0, 0, 0, 0, 0],
     color: '#2b4989'
+  }, {
+    name: 'lost',
+    data: [0, 0, 0, 0.7, 0, 0, 0, 0],
+    color: '#FF0089'
   }, {
     name: '4',
     data: [0, 0, 0, 4.6, 0, 0, 0, 0],
@@ -82,13 +98,25 @@ Highcharts.chart('swiper-slide-graph2', {
     data: [0, 0, 0, 0, 4.1, 0, 0, 0],
     color: '#2b4989'
   }, {
+    name: 'boost',
+    data: [0, 0, 0, 0, 0, 0.9, 0, 0],
+    color: '#00FF34',
+  }, {
     name: '6',
     data: [0, 0, 0, 0, 0, 4.0, 0, 0],
     color: '#2b4989'
   }, {
+    name: 'boost',
+    data: [0, 0, 0, 0, 0, 0, 1.2, 0],
+    color: '#00FF34',
+  }, {
     name: '7',
     data: [0, 0, 0, 0, 0, 0, 3.3, 0],
     color: '#2b4989'
+  }, {
+    name: 'lost',
+    data: [0, 0, 0, 0, 0, 0, 0, 0.2],
+    color: '#ccc'
   }, {
     name: '8',
     data: [0, 0, 0, 0, 0, 0, 0, 2.1],
