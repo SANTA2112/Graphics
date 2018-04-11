@@ -63,63 +63,15 @@ Highcharts.chart('swiper-slide-graph2', {
   },
   series: [{
       name: 'boost',
-      data: [1.5, 0, 0, 0, 0, 0, 0, 0],
-      color: '#00FF34',
-  }, {
-    name: '1',
-    data: [24.2, 0, 0, 0, 0, 0, 0, 0],
-    color: '#2b4989',
-  }, {
-    name: 'lost',
-    data: [0, 0.5, 0, 0, 0, 0, 0, 0],
-    color: '#FF0089'
-  }, {
-    name: '2',
-    data: [0, 13.4, 0, 0, 0, 0, 0, 0],
-    color: '#2b4989'
-  }, {
-    name: 'boost',
-    data: [0, 0, 0.2, 0, 0, 0, 0, 0],
-    color: '#00FF34',
-  }, {
-    name: '3',
-    data: [0, 0, 10.4, 0, 0, 0, 0, 0],
-    color: '#2b4989'
-  }, {
-    name: 'lost',
-    data: [0, 0, 0, 0.7, 0, 0, 0, 0],
-    color: '#FF0089'
-  }, {
-    name: '4',
-    data: [0, 0, 0, 4.6, 0, 0, 0, 0],
-    color: '#2b4989'
-  }, {
-    name: '5',
-    data: [0, 0, 0, 0, 4.1, 0, 0, 0],
-    color: '#2b4989'
-  }, {
-    name: 'boost',
-    data: [0, 0, 0, 0, 0, 0.9, 0, 0],
-    color: '#00FF34',
-  }, {
-    name: '6',
-    data: [0, 0, 0, 0, 0, 4.0, 0, 0],
-    color: '#2b4989'
-  }, {
-    name: 'boost',
-    data: [0, 0, 0, 0, 0, 0, 1.2, 0],
-    color: '#00FF34',
-  }, {
-    name: '7',
-    data: [0, 0, 0, 0, 0, 0, 3.3, 0],
-    color: '#2b4989'
-  }, {
-    name: 'lost',
-    data: [0, 0, 0, 0, 0, 0, 0, 0.2],
-    color: '#ccc'
-  }, {
-    name: '8',
-    data: [0, 0, 0, 0, 0, 0, 0, 2.1],
-    color: '#ccc'
+      data: [{y:1.5, color: '#00FF34'}, 0, {y:0.2, color: '#00FF34'}, 0, 0, {y:0.9, color: '#00FF34'}, {y:1.2, color: '#00FF34'}, 0],
+      color: '#00FF34'
+    },{
+      name: 'lose',
+      data: [0, {y:0.5, color: '#FF0034'}, 0, {y:0.7, color: '#FF0034'}, 0, 0, 0, {y:0.2, color: '#CCC'}],
+      color: '#FF0034'
+    }, {
+      name: 'values',
+      data: [24.2, 13.4, 10.4, 4.6, 4.1, 4.0, 3.3, {y:2.1, color:'#ccc'}],
+      color: '#2b4989',
   }]
 });
